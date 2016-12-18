@@ -1,20 +1,26 @@
 package nl.devon.cucumber.sample_apps.banking.steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import nl.devon.cucumber.sample_apps.banking.domain.DomainModel;
 
 public class OrderSteps {
 
-	@When("^I transfer EUR (\\d+)\\.(\\d+)$")
-	public void iTransferEUR(int arg1, int arg2) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
+	private DomainModel model;
+
+	public OrderSteps(DomainModel model) {
+		this.model = model;
+	}
+
+	@When("^I transfer (.*)$")
+	public void iTransferEUR(String amount) {
+		model.setAmount(amount);
+		model.setStatus("initiated");
+		model.addLog("amount transfer of " + amount + " is initiated");
 	}
 
 	@Then("^the status is updated$")
-	public void theStatusIsUpdated() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
+	public void theStatusIsUpdated() {
+		model.setStatus("completed");
 	}
 }
