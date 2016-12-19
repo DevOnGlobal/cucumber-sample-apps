@@ -7,6 +7,6 @@ import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = { "pretty", "html:out" }, snippets = SnippetType.CAMELCASE)
+@CucumberOptions(plugin = { "pretty", "html:out" }, snippets = SnippetType.CAMELCASE, glue= {"classpath:nl.devon"})
 public class RunCucumberTest {
 }
