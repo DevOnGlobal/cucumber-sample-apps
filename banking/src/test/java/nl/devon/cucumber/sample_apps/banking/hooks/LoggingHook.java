@@ -1,14 +1,23 @@
 package nl.devon.cucumber.sample_apps.banking.hooks;
 
 import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import nl.devon.DelayedVerificationSteps;
 import nl.devon.cucumber.sample_apps.banking.domain.DomainModel;
 
 public class LoggingHook {
 
 	private DomainModel model;
+	private DelayedVerificationSteps steps;
 
-	public LoggingHook(DomainModel model) {
+	public LoggingHook(DomainModel model, DelayedVerificationSteps steps) {
 		this.model = model;
+		this.steps = steps;
+	}
+
+	@Before
+	public void injectModelInFramework() {
+		steps.setDelayedVerificationStore(model);
 	}
 
 	@After

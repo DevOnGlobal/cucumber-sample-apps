@@ -3,7 +3,10 @@ package nl.devon.cucumber.sample_apps.banking.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DomainModel {
+import nl.devon.DelayedVerification;
+import nl.devon.DelayedVerificationStore;
+
+public class DomainModel implements DelayedVerificationStore {
 
 	private String creditor;
 	private String debtor;
@@ -49,5 +52,15 @@ public class DomainModel {
 
 	public void addLog(String entry) {
 		logEntries.add(entry);
+	}
+
+	public void save(DelayedVerification verification) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public DelayedVerification load(String dvId) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
