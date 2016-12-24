@@ -4,7 +4,7 @@
 
 	<groupId>nl.devon.cucumber.sample-apps</groupId>
 	<artifactId>banking</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>banking</name>
@@ -49,8 +49,8 @@
 			<version>${slf4j.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>nl.devon</groupId>
-			<artifactId>cucumber-delayed-verification</artifactId>
+			<groupId>nl.devon.cucumber</groupId>
+			<artifactId>cucumber-delayed-verification-steps</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
