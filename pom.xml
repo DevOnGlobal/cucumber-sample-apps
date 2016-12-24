@@ -10,7 +10,7 @@
 	<name>Cucumber Delayed Verification Sample Apps</name>
 	<url>https://www.dev-on.nl</url>
 
-<modules>
-<module>banking</module>
-</modules>
+	<modules>
+		<module>banking</module>
+	</modules>
 </project>
