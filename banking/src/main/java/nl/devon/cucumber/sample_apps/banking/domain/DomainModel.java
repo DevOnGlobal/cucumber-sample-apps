@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nl.devon.DelayedVerification;
-import nl.devon.DelayedVerificationStore;
+import nl.devon.PersistableTestData;
 
-public class DomainModel implements DelayedVerificationStore {
+public class DomainModel implements PersistableTestData {
 
 	private String creditor;
 	private String debtor;
@@ -54,13 +54,14 @@ public class DomainModel implements DelayedVerificationStore {
 		logEntries.add(entry);
 	}
 
+	public void load(DelayedVerification delayedVerification) {
+		// TODO Auto-generated method stub
+
+	}
+
 	public void save(DelayedVerification verification) {
 		// TODO Auto-generated method stub
 
 	}
 
-	public DelayedVerification load(String dvId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
