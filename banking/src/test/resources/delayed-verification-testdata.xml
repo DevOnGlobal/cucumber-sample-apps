@@ -1,0 +1,15 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet author="Robert van Vark" id="Delayed Verification test data for cucumber tests">
+		<insert tableName="DELAYED_VERIFICATION">
+			<column name="ID">1</column>
+			<column name="CREATED_AT" valueDate="2016-12-26T00:00:00"/>
+			<column name="VERIFY_AT" valueDate="2016-12-26T00:00:00"/>
+			<column name="CHECKSUM">test checksum</column>
+			<column name="FEATURE">Simple banking scenario</column>
+		</insert>
+	</changeSet>
+</databaseChangeLog>

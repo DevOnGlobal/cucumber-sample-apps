@@ -20,7 +20,7 @@ Feature: Simple banking scenario
 		When I transfer EUR 2.00
 		Then the creditor account is credited with EUR 2.00
 		And the debtor account is debited with EUR 2.00
-		Then after 2:00 hr billing information is generated (dv-checksum=12345)
+		Then after 2:00 hr billing information is generated (dv-checksum=ABCDEFGHIJKLMNOPQRSTUVWXYZ789012)
 
 	# (dv-id=1) at Scenario to make scenario title unique in feature file
 	# (dv-id=1) at Given to load TestExecutionContext from previous (sub) Scenario
