@@ -3,8 +3,8 @@ package nl.devon.cucumber.sample_apps.banking.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import nl.devon.DelayedVerification;
-import nl.devon.PersistableTestData;
+import nl.devon.pickles.steps.DelayedVerification;
+import nl.devon.pickles.steps.PersistableTestData;
 
 public class DomainModel implements PersistableTestData {
 

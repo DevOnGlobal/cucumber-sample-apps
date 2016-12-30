@@ -2,12 +2,12 @@ package nl.devon.cucumber.sample_apps.banking.hooks;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import nl.devon.DelayedVerificationSteps;
-import nl.devon.DelayedVerificationStore;
-import nl.devon.TestExecutionContext;
-import nl.devon.cucumber.jdbc.JdbcDelayedVerificationStore;
 import nl.devon.cucumber.sample_apps.banking.domain.DomainModel;
 import nl.devon.cucumber.sample_apps.banking.domain.ExecutionContext;
+import nl.devon.pickles.jdbc.JdbcDelayedVerificationStore;
+import nl.devon.pickles.steps.DelayedVerificationSteps;
+import nl.devon.pickles.steps.DelayedVerificationStore;
+import nl.devon.pickles.steps.TestExecutionContext;
 
 public class LoggingHook {
 

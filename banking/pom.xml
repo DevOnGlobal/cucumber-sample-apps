@@ -62,14 +62,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>nl.devon.cucumber</groupId>
-			<artifactId>cucumber-delayed-verification-steps</artifactId>
+			<groupId>nl.devon.pickles</groupId>
+			<artifactId>pickles-steps</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
-			<groupId>nl.devon.cucumber</groupId>
-			<artifactId>cucumber-delayed-verification-jdbc</artifactId>
+			<groupId>nl.devon.pickles</groupId>
+			<artifactId>pickles-jdbc</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 

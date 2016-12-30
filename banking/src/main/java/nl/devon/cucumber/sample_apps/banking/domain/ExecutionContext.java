@@ -1,7 +1,7 @@
 package nl.devon.cucumber.sample_apps.banking.domain;
 
-import nl.devon.DelayedVerification;
-import nl.devon.TestExecutionContext;
+import nl.devon.pickles.steps.DelayedVerification;
+import nl.devon.pickles.steps.TestExecutionContext;
 
 public class ExecutionContext implements TestExecutionContext {
 
