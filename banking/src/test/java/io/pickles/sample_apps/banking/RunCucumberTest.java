@@ -1,4 +1,4 @@
-package nl.devon.cucumber.sample_apps.banking;
+package io.pickles.sample_apps.banking;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,7 +18,11 @@ import liquibase.exception.LiquibaseException;
 import liquibase.resource.ClassLoaderResourceAccessor;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = { "pretty", "html:out" }, snippets = SnippetType.CAMELCASE, glue = { "classpath:nl.devon" })
+@CucumberOptions(//
+		plugin = { "pretty", "html:out" }, //
+		snippets = SnippetType.CAMELCASE, //
+		glue = { "classpath:io.pickles.sample_apps.banking", "classpath:io.pickles.steps" }//
+)
 public class RunCucumberTest {
 
 	@BeforeClass
@@ -32,6 +36,5 @@ public class RunCucumberTest {
 
 		liquibase = new Liquibase("delayed-verification-testdata.xml", new ClassLoaderResourceAccessor(), database);
 		liquibase.update("");
-
 	}
 }

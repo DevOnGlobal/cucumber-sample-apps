@@ -1,13 +1,13 @@
-package nl.devon.cucumber.sample_apps.banking.hooks;
+package io.pickles.sample_apps.banking.hooks;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import nl.devon.cucumber.sample_apps.banking.domain.DomainModel;
-import nl.devon.cucumber.sample_apps.banking.domain.ExecutionContext;
-import nl.devon.pickles.jdbc.JdbcDelayedVerificationStore;
-import nl.devon.pickles.steps.DelayedVerificationSteps;
-import nl.devon.pickles.steps.DelayedVerificationStore;
-import nl.devon.pickles.steps.TestExecutionContext;
+import io.pickles.jdbc.JdbcDelayedVerificationStore;
+import io.pickles.sample_apps.banking.domain.DomainModel;
+import io.pickles.sample_apps.banking.domain.ExecutionContext;
+import io.pickles.steps.DelayedVerificationSteps;
+import io.pickles.steps.DelayedVerificationStore;
+import io.pickles.steps.TestExecutionContext;
 
 public class LoggingHook {
 

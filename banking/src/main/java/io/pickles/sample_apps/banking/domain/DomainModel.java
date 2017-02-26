@@ -1,10 +1,10 @@
-package nl.devon.cucumber.sample_apps.banking.domain;
+package io.pickles.sample_apps.banking.domain;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import nl.devon.pickles.steps.DelayedVerification;
-import nl.devon.pickles.steps.PersistableTestData;
+import io.pickles.steps.DelayedVerification;
+import io.pickles.steps.PersistableTestData;
 
 public class DomainModel implements PersistableTestData {
 
@@ -54,14 +54,13 @@ public class DomainModel implements PersistableTestData {
 		logEntries.add(entry);
 	}
 
+	public void save(DelayedVerification delayedVerification) {
+		// TODO Auto-generated method stub
+
+	}
+
 	public void load(DelayedVerification delayedVerification) {
 		// TODO Auto-generated method stub
 
 	}
-
-	public void save(DelayedVerification verification) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

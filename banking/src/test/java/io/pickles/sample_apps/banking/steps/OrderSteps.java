@@ -1,8 +1,8 @@
-package nl.devon.cucumber.sample_apps.banking.steps;
+package io.pickles.sample_apps.banking.steps;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import nl.devon.cucumber.sample_apps.banking.domain.DomainModel;
+import io.pickles.sample_apps.banking.domain.DomainModel;
 
 public class OrderSteps {
 
