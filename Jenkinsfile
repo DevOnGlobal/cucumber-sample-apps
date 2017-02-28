@@ -3,8 +3,10 @@ pipeline {
   agent { docker 'maven' }
   stages {
     stage('Build') {
-      withSonarQubeEnv('default') {
-        sh "mvn -B clean package sonar:sonar"
+      steps {
+        withSonarQubeEnv('default') {
+          sh "mvn -B clean package sonar:sonar"
+        }
         junit 'target/surefire-reports/*.xml'
       }
     }    
